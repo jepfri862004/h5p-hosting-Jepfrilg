@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>H5P Standalone Player</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tunapanda/h5p-standalone@master/dist/styles/h5p.css">
+</head>
+<body>
+  <h1>H5P Player</h1>
+  <div id="h5p-container"></div>
+
+  <script src="https://cdn.jsdelivr.net/gh/tunapanda/h5p-standalone@master/dist/main.bundle.js"></script>
+  <script>
+    H5PStandalone.embed({
+      h5pJsonPath: './h5p',
+      frameJs: 'https://cdn.jsdelivr.net/gh/tunapanda/h5p-standalone@master/dist/frame.bundle.js',
+      frameCss: 'https://cdn.jsdelivr.net/gh/tunapanda/h5p-standalone@master/dist/styles/h5p.css',
+      id: 'h5p-container'
+    });
+  </script>
+</body>
+</html>
